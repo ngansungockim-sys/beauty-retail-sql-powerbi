@@ -17,47 +17,47 @@ Is growth driven by increased order volume or higher average order value?
 What actionable insights can be derived for category and retention strategy?
 
 **Dataset & Scope**
-Beauty e-commerce transactional data
+
+Beauty e-commerce transactional dataset
 
 Time period: 2016–2018
 
-Focus on Health & Beauty and Perfumery categories
+Scope limited to Health & Beauty and Perfumery categories
+
+The dataset represents typical marketplace-style e-commerce data with order-level transactions and limited customer history.
 
 **Data Model**
 
-**A star schema was built in SQLite to support scalable analysis:**
+**A star schema was implemented in SQLite to reflect real-world analytics workflows:**
 
-fact_beauty – order-level sales data
+fact_beauty – order-level sales transactions
 
 dim_orders – order lifecycle and timestamps
 
-dim_products_beauty – product and category details
+dim_products_beauty – product and category attributes
 
 dim_customers – customer identifiers
 
-Reusable SQL views were created for analytics and BI reporting.
-
+Reusable SQL views were created to support analytics and Power BI reporting.
 **Methodology**
 
 **SQL (SQLite)**
 
-Data modelling and transformation
+Designed fact and dimension tables
 
-KPI and aggregation views
+Built analytical views aligned with business KPIs
 
-Business-aligned queries with clear purpose
+Ensured clean joins and avoided duplicate inflation
+
+Focused on clarity and business relevance over complex SQL
 
 **Power BI**
 
-KPI cards (Revenue, Orders, AOV)
+Used SQL for transformation and aggregation
 
-Monthly revenue trend by category
+Used Power BI exclusively for visualisation and storytelling
 
-Category revenue contribution
-
-Order volume trends
-
-Interactive slicers for exploration
+Built executive-style KPI dashboards
 
 **Key KPIs**
 **Metric**	              **Value**
@@ -67,6 +67,8 @@ Total Revenue	             $1.66M
 Total Orders	             ~12,000
 
 Average Order Value (AOV)	 $138
+
+These figures indicate a relatively high-value transaction model compared to typical e-commerce benchmarks.
 
 **Key Insights & Actions**
 
@@ -80,38 +82,52 @@ Revenue increased steadily from 2016 to 2018, indicating scalable demand rather 
 
 Health & Beauty contributes ~76% of total revenue, while Perfumery accounts for ~24%.
 
-**Action**: Prioritise retention and promotions in Health & Beauty; position Perfumery as a cross-sell or upsell category.
+**Action**: Health & Beauty is the core revenue driver. Retention, promotions, and assortment optimisation should prioritise this category, while Perfumery can be positioned as a complementary cross-sell opportunity.
 
 **Insight 3 – Volume-Driven Growth**
 
 Average order value remains high and stable while order volume increases.
 
-**Action**: Maintain pricing discipline and focus on acquisition and retention rather than discounting.
+**Action**: Growth is driven primarily by increasing demand rather than price discounting, suggesting pricing discipline can be maintained.
 
 **Dashboard Preview**
+
+**The Power BI dashboard provides:**
+
+KPI cards for revenue, orders, and AOV
+
+Monthly revenue trends by category
+
+Category contribution to total revenue
+
+Monthly order volume trends
+
+Interactive category filtering
 
 <img width="1263" height="701" alt="image" src="https://github.com/user-attachments/assets/dcdf3d9d-fdae-4bc5-8209-f828f163243d" />
 
 **Assumptions & Limitations**
-No marketing cost data → ROAS cannot be calculated
+Marketing cost data is unavailable → ROAS cannot be calculated
 
-No quantity field → revenue based on item price only
+No quantity field → revenue is based on item price only
 
-Limited repeat history → full customer lifetime value not estimated
+Limited customer history → full lifetime value analysis not possible
 
-Analysis is descriptive, not causal
+Analysis is descriptive and does not establish causality
 
-These constraints reflect real-world data limitations.
+These limitations reflect real-world data constraints rather than technical gaps.
 
-**Next Steps**
+**Potential Next Steps**
+
+With additional data, further analysis could include:
 
 Customer repeat and cohort analysis
 
-Retention and churn investigation
+Retention and churn metrics
 
 Delivery performance impact on revenue
 
-Review score vs sales relationship
+Review score and satisfaction analysis
 
 **Tools Used**
 
