@@ -1,5 +1,6 @@
 **Beauty Retail Revenue Analysis
 Business Context**
+
 An online beauty retailer generating over $1.6M in revenue wants to understand what is driving growth, which product categories contribute most to sales, and whether recent performance improvements are driven by higher order volume or increased order value.
 Management wants a clear view of business performance over time to support commercial and category-level decisions.
 **Business Questions**
