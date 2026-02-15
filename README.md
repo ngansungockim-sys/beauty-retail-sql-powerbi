@@ -1,4 +1,15 @@
 ***DATA ANALYTICS PORTFOLIO PROJECT***
+
+## REPORT
+
+#### Dataset overview
+This project uses a public Brazilian e-commerce dataset from Olist Store, containing approximately 100,000 orders placed between 2016 and 2018 across multiple online marketplaces in Brazil. The dataset provides a comprehensive transactional view, covering order status, pricing, payment details, freight performance, customer demographics, product attributes, and customer reviews.
+
+In addition, a geolocation dataset links Brazilian postal codes to latitude and longitude coordinates, enabling spatial and regional performance analysis. Although the data represents real commercial activity, it has been fully anonymised to protect privacy, ensuring it remains suitable for analytical exploration while preserving the integrity of the original business context.
+
+#### Database overview
+To support structured data management and scalable analysis, the dataset was implemented within a dedicated SQL database using a star schema design. Fact and dimension tables were structured to reflect transactional relationships, ensuring data integrity and consistent KPI definitions. Moreover, the reusable analytical views were created to aggregate monthly revenue and order metrics, enabling reliable reporting and seamless integration with Power BI. Thus, this layered design mirrors real-world analytics workflows, where SQL handles transformation and modelling, and BI tools focus on visualisation and business storytelling. Not only that, this structure ensures that business metrics such as revenue and order volume are defined consistently across dashboards and future analyses.
+
 **Beauty Retail Revenue Analysis
 Business Context**
 
